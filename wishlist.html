@@ -23,59 +23,44 @@
 
   <!-- this is star Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <div class="row justify-content-between align-items-center"> <!-- Center and left-aligned items -->
-          <div class="col-auto">
-            <a class="navbar-brand text-primary fw-bold" href="#">
-              <img src="images/wallpaperflare.com_wallpaper.jpg" width="40px" height="40px" style="border-radius: 50%;">
-              FAB-SHOP
-            </a>
-          </div>
-          <div class="col-auto">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
-        <div class="row justify-content-between p-0"> <!-- Centered items -->
-          <div class="col-auto">
-            <div class="collapse navbar-collapse flex-fill" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active fw-normal" aria-current="page" href="#">Home <i
-                      class="fa-solid fa-house-user"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-normal" href="categoryuser.html">Category <i
-                      class="fa-solid fa-layer-group"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-normal" href="productuser.html">Product <i
-                      class="fa-brands fa-product-hunt"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-normal" href="wishlist.html">Wishlist <i class="fa-solid fa-heart"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-normal" href="addcart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-start"> <!-- Left-aligned items -->
-          <div class="col-auto">
-            <form class="d-flex m-1" role="search">
-              <input onkeyup="searchdate(this.value)" class="form-control me-2" type="search" placeholder="Search"
-                aria-label="Search" id="search" class="search">
-              <i class="fas fa-search m-3" onmouseover="getsearch(this.id)" id="searchName"></i>
-            </form>
-          </div>
-          <div class="col-auto">
-            <a href="login.html"><button class="btn btn-outline-primary m-1">Logout</button></a>
+        <a class="navbar-brand text-primary fw-bold" href="#">
+          <img src="./images/wallpaperflare.com_wallpaper.jpg" width="40px" height="40px" style="border-radius: 50%;">
+          FAB-SHOP
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home <i class="fas fa-house-user"></i></a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="./categoryuser.html">Category <i class="fas fa-layer-group"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./productuser.html">Product <i class="fab fa-product-hunt"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./wishlist.html">Wishlist <i class="fas fa-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./addcart.html">Cart <i class="fas fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+  
+          <form class="d-flex m-1">
+            <input onkeyup="searchdate(this.value)" class="form-control me-2" type="search" placeholder="Search"
+              aria-label="Search" id="search">
+            <i class="fas fa-search m-3" onmouseover="getsearch(this.id)" id="searchName"></i>
+          </form>
+  
+          <div class="d-flex">
+            <a href="./login.html"><button class="btn btn-outline-primary m-1">Logout</button></a>
           </div>
         </div>
       </div>

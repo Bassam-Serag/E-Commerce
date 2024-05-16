@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
   <title>Home</title>
@@ -16,6 +18,12 @@
     a {
       text-decoration: none;
     }
+    .card-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
   </style>
 </head>
 
@@ -118,53 +126,67 @@
 
       <br><br><br><br>
       <h2 style="text-align: center; color: #007bff;">category</h2><br>
-      <div class="category">
-
-        <!-- this is star card Camera -->
-        <div class="cat-card">
-          <a href="./login.html"><img src="images/camera-g026dcb133_1920.jpg" alt="Product 1"></a>
-          <div class="card-content">
-            <a href="./login.html">
-              <p class="debart">Camera</p>
-            </a>
-          </div>
+      <div class="row m-auto text-center " style="text-align: center; ">
+    
+        <!-- Card 1: Camera -->
+        <div class="col-12 col-md-6 mb-4 ">
+            <div class="card h-100 w-100">
+                <a href="./login.html">
+                    <img src="images/camera-g026dcb133_1920.jpg" class="card-img-top" alt="Camera">
+                </a>
+                <div class="card-body">
+                    <a href="./login.html">
+                        <p class="card-text">Camera</p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- this is end card Camera -->
-
-        <!-- this is star card Mobile -->
-        <div class="cat-card">
-          <a href="./login.html"><img src="images/samsung-g1af163c42_1920.jpg" alt="Product 2"></a>
-          <div class="card-content">
-            <a href="./login.html">
-              <p class="debart">Mobile</p>
-            </a>
-          </div>
+    
+        <!-- Card 2: Mobile -->
+        <div class="col-12 col-md-6 mb-4">
+            <div class="card h-100 w-100">
+                <a href="./login.html">
+                    <img src="images/samsung-g1af163c42_1920.jpg" class="card-img-top" alt="Mobile">
+                </a>
+                <div class="card-body">
+                    <a href="./login.html">
+                        <p class="card-text">Mobile</p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- this is end card Mobile -->
-
-        <!-- this is star card Labtop -->
-        <div class="cat-card">
-          <a href="./login.html"><img src="images/ben-kolde-t9DooibgMEk-unsplash.jpg" alt="Product 2"></a>
-          <div class="card-content">
-            <a href="./login.html">
-              <p class="debart">Labtop</p>
-            </a>
-          </div>
+    
+        <!-- Card 3: Laptop -->
+        <div class="col-12 col-md-6 mb-4">
+            <div class="card h-100 w-100">
+                <a href="./login.html">
+                    <img src="images/ben-kolde-t9DooibgMEk-unsplash.jpg" class="card-img-top" alt="Laptop">
+                </a>
+                <div class="card-body">
+                    <a href="./login.html">
+                        <p class="card-text">Laptop</p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- this is end card Labtop -->
-
-
-        <!-- this is star card car -->
-        <div class="cat-card">
-          <a href="./login.html"><img src="images/campbell-3ZUsNJhi_Ik-unsplash.jpg" alt="Product 2"></a>
-          <div class="card-content">
-            <a href="./login.html">
-              <p class="debart">Car</p>
-            </a>
-          </div>
+    
+        <!-- Card 4: Car -->
+        <div class="col-12 col-md-6 mb-4">
+            <div class="card h-100 w-100">
+                <a href="./login.html">
+                    <img src="images/campbell-3ZUsNJhi_Ik-unsplash.jpg" class="card-img-top" alt="Car">
+                </a>
+                <div class="card-body">
+                    <a href="./login.html">
+                        <p class="card-text">Car</p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- this is end card car -->
-      </div>
+    
+    </div>
+
+    
 
 
 
@@ -278,6 +300,9 @@
       <!-- Copyright -->
     </footer>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 
 </html>
